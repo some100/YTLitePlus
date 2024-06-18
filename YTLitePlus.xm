@@ -156,7 +156,7 @@ static BOOL IsEnabled(NSString *key) {
 
 // A/B flags
 %hook YTColdConfig 
-- (BOOL)respectDeviceCaptionSetting { return NO; } // YouRememberCaption: https://poomsmart.github.io/repo/depictions/youremembercaption.html
+- (BOOL)respectDeviceCaptionSetting { return YES; }
 - (BOOL)isLandscapeEngagementPanelSwipeRightToDismissEnabled { return YES; } // Swipe right to dismiss the right panel in fullscreen mode
 - (BOOL)commercePlatformClientEnablePopupWebviewInWebviewDialogController { return NO;}
 %end
