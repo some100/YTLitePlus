@@ -248,7 +248,7 @@ BOOL isSelf() {
 
 // A/B flags
 %hook YTColdConfig 
-- (BOOL)respectDeviceCaptionSetting { return YES; }
+- (BOOL)respectDeviceCaptionSetting { return NO; } // YouRememberCaption: https://poomsmart.github.io/repo/depictions/youremembercaption.html
 - (BOOL)isLandscapeEngagementPanelSwipeRightToDismissEnabled { return YES; } // Swipe right to dismiss the right panel in fullscreen mode
 - (BOOL)commercePlatformClientEnablePopupWebviewInWebviewDialogController { return NO;}
 %end
